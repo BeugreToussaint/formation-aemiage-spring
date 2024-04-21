@@ -1,12 +1,12 @@
 package dev.tuxbe.aemiage.account;
 
-import dev.tuxbe.aemiage.model.TypeAccount;
+import dev.tuxbe.aemiage.contract.TypeAccount;
+import jakarta.annotation.PostConstruct;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -102,5 +102,10 @@ public class AccountEntity {
     @Override
     public int hashCode() {
         return Objects.hash(id, accountNumber, amount, typeAccount, datecreation, datemodification);
+    }
+
+    @PostConstruct
+    public void init() {
+        datecreation = LocalDateTime.now();
     }
 }

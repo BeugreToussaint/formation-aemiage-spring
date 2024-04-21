@@ -1,6 +1,6 @@
 package dev.tuxbe.aemiage.exception;
 
-import dev.tuxbe.aemiage.model.ResponseApi;
+import dev.tuxbe.aemiage.contract.ResponseApi;
 import jakarta.validation.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

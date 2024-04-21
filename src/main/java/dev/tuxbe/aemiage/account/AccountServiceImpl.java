@@ -5,8 +5,7 @@ import dev.tuxbe.aemiage.exception.AccountAlreadyExistException;
 import dev.tuxbe.aemiage.exception.ResourceNotFoundException;
 import dev.tuxbe.aemiage.exception.TypeAccountDontExistException;
 import dev.tuxbe.aemiage.mapper.AccountMapper;
-import dev.tuxbe.aemiage.model.TypeAccount;
-import dev.tuxbe.aemiage.transaction.TransactionService;
+import dev.tuxbe.aemiage.contract.TypeAccount;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.context.ApplicationEventPublisher;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @Service

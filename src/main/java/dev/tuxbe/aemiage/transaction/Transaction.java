@@ -1,6 +1,6 @@
 package dev.tuxbe.aemiage.transaction;
 
-import dev.tuxbe.aemiage.model.TypeOperation;
+import dev.tuxbe.aemiage.contract.TypeOperation;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.data.annotation.CreatedDate;

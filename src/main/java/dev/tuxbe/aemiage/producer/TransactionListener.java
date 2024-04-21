@@ -3,7 +3,7 @@ package dev.tuxbe.aemiage.producer;
 import dev.tuxbe.aemiage.account.AccountDto;
 import dev.tuxbe.aemiage.events.CreateTransactionEvent;
 import dev.tuxbe.aemiage.exception.GlobalException;
-import dev.tuxbe.aemiage.model.TypeOperation;
+import dev.tuxbe.aemiage.contract.TypeOperation;
 import dev.tuxbe.aemiage.transaction.Transaction;
 import dev.tuxbe.aemiage.transaction.TransactionServiceImpl;
 import org.slf4j.Logger;
